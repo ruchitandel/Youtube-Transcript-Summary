@@ -37,7 +37,7 @@ A comprehensive web-based tool that extracts YouTube video transcripts, generate
 
 - Python **3.8+**
 - **FFmpeg** (for audio processing)
-- **Groq API key** (get it from <https://console.groq.com>)
+- **Groq API key** (from <https://console.groq.com>)
 
 ---
 
