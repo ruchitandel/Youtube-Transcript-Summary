@@ -112,9 +112,7 @@ Youtube_Transcript_Summary/
 │   ├── diarization.py            # Speaker detection
 │   ├── templates/
 │   │   └── index.html            # Frontend interface
-│   └── static/
-│       ├── index.html
-├── downloads/                    # Temporary audio storage
+│   ├── downloads                 # Temporary audio storage
 ├── screenshots/                  # UI screenshots
 ├── requirements.txt              # Python dependencies
 ├── README.md                     # Project documentation
