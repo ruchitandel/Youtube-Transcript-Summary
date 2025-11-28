@@ -12,7 +12,7 @@ A comprehensive web-based tool that extracts YouTube video transcripts, generate
 - **AI Summarization** – Generate comprehensive summaries with key points and insights (via Groq LLMs)  
 - **Clean UI** – Modern, responsive interface with tabbed navigation  
 
-### 🌟 Bonus Features (All Implemented)
+### Bonus Features
 - **Multilingual Support** – Automatically detects and transcribes 99+ languages  
 - **Auto-Chapter Generation** – AI-generated chapters based on content analysis  
 - **Sentiment Analysis** – Analyze the emotional tone of the video  
@@ -38,7 +38,6 @@ A comprehensive web-based tool that extracts YouTube video transcripts, generate
 - Python **3.8+**
 - **FFmpeg** (for audio processing)
 - **Groq API key** (get it from <https://console.groq.com>)
-- (Optional) **Hugging Face token** for speaker diarization
 
 ---
 
@@ -89,13 +88,13 @@ Navigate to http://localhost:5000 in your web browser
 
 ### 3. Process a Video
 
-1. Paste a YouTube URL (e.g., https://youtube.com/watch?v=dQw4w9WgXcQ)
+1. Paste a YouTube URL 
 2. Select desired features:
 - Sentiment Analysis
 - Auto Chapters
 - Speaker Detection
-3. Click "Generate Transcript & Summary"
-4. Wait for processing (1-5 minutes depending on video length)
+3. Click "Extract Transcript" and "Generate Summary"
+4. Wait for processing (depending on video length)
 5. View results in organized tabs
 
 
@@ -119,6 +118,6 @@ Youtube_Transcript_Summary/
 ├── screenshots/                  # UI screenshots
 ├── requirements.txt              # Python dependencies
 ├── README.md                     # Project documentation
-└── .env                          # API keys (not in git)
+└── .env                          # API keys 
 ```
 
