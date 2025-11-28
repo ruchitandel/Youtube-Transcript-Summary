@@ -51,16 +51,78 @@ A comprehensive web-based tool that extracts YouTube video transcripts, generate
 
 # ⭐ Final Output (Copy–Paste This)
 
-## 1. Clone the Repository
+### 1. Clone the Repository
 ```bash
 git clone <your-repo-url>
 cd Youtube_Transcript_Summary
 ```
 
-## 2. Create Virtual Environment
+### 2. Create Virtual Environment
 ```bash
 python -m venv venv
 ```
 
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 
+### 4. Install FFmpeg
+```bash
+On Windows:
+Download from https://ffmpeg.org/download.html
+```
+
+##-# 5. Set Up Environment Variables
+free Groq API key from: https://console.groq.com
+Create a .env file in the root directory:
+```bash
+GROQ_API_KEY=your_groq_api_key_here
+```
+
+## Usage
+### 1. Start the Server
+```bash
+cd src
+python app.py
+```
+The server will start at http://localhost:5000
+
+### 2. Open in Browser
+Navigate to http://localhost:5000 in your web browser
+
+### 3. Process a Video
+
+1. Paste a YouTube URL (e.g., https://youtube.com/watch?v=dQw4w9WgXcQ)
+2. Select desired features:
+- ✅ Sentiment Analysis
+- ✅ Auto Chapters
+- ✅ Speaker Detection
+3. Click "Generate Transcript & Summary"
+4. Wait for processing (1-5 minutes depending on video length)
+5. View results in organized tabs
+
+
+## Project Structure
+
+```
+Youtube_Transcript_Summary/
+├── src/
+│   ├── app.py                    # Flask backend
+│   ├── video_processor.py        # YouTube download & audio extraction
+│   ├── transcriber.py            # Whisper speech-to-text
+│   ├── summarizer.py             # AI summary generation
+│   ├── sentiment_analyzer.py     # Sentiment analysis
+│   ├── chapter_generator.py      # Auto-chapter creation
+│   ├── diarization.py            # Speaker detection
+│   ├── templates/
+│   │   └── index.html            # Frontend interface
+│   └── static/
+│       ├── index.html
+├── downloads/                    # Temporary audio storage
+├── screenshots/                  # UI screenshots
+├── requirements.txt              # Python dependencies
+├── README.md                     # Project documentation
+└── .env                          # API keys (not in git)
+```
 
